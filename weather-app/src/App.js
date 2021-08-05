@@ -12,7 +12,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${(city === null ? 'Budapest' : city)}&appid=6f79047060b4fdc997a285c479048a67`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${(city === null ? 'Budapest' : city)}&appid=6f79047060b4fdc997a285c479048a67`)
       .then(res => res.json())
       .then(
         (items) => {
